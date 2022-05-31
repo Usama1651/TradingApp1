@@ -18,7 +18,7 @@ namespace New_Form
             Application.Run(new Form1());
 
             //if (ValidLogin) { 
-            //Application.Run(new Form1());
+            //Application.Run(new Form3());
             
             //}
         }
