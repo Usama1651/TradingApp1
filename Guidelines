@@ -1,0 +1,4 @@
+# TradingApp1
+
+Create/copy text file in D drive which name is "usama" (usama.txt)
+when you update record you must select whole row in gridview then click on update. otherwise it show a message "Select a row". 
