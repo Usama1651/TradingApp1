@@ -1,0 +1,90 @@
+E:\final\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.exe
+E:\final\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.deps.json
+E:\final\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.runtimeconfig.json
+E:\final\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.dll
+E:\final\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.pdb
+E:\final\TradingApp1\New Form\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.AssemblyReference.cache
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form1.resources
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form2.resources
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form3.resources
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Properties.Resources.resources
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.UpdateItemForm.resources
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.GenerateResource.cache
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.GeneratedMSBuildEditorConfig.editorconfig
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfoInputs.cache
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfo.cs
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CoreCompileInputs.cache
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CopyComplete
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.dll
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\refint\New Form.dll
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.pdb
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.genruntimeconfig.cache
+E:\final\TradingApp1\New Form\obj\Debug\net6.0-windows\ref\New Form.dll
+E:\TradingAppf\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.exe
+E:\TradingAppf\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.deps.json
+E:\TradingAppf\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.runtimeconfig.json
+E:\TradingAppf\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.dll
+E:\TradingAppf\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.pdb
+E:\TradingAppf\TradingApp1\New Form\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.AssemblyReference.cache
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form1.resources
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form2.resources
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Properties.Resources.resources
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.UpdateItemForm.resources
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.GenerateResource.cache
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.GeneratedMSBuildEditorConfig.editorconfig
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfoInputs.cache
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfo.cs
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CoreCompileInputs.cache
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CopyComplete
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.dll
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\refint\New Form.dll
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.pdb
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.genruntimeconfig.cache
+E:\TradingAppf\TradingApp1\New Form\obj\Debug\net6.0-windows\ref\New Form.dll
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.exe
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.deps.json
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.runtimeconfig.json
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.dll
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.pdb
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.AssemblyReference.cache
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form1.resources
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form2.resources
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Properties.Resources.resources
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.UpdateItemForm.resources
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.GenerateResource.cache
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfoInputs.cache
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfo.cs
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CoreCompileInputs.cache
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CopyComplete
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.dll
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\refint\New Form.dll
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.pdb
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.genruntimeconfig.cache
+C:\Users\usama\Downloads\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\ref\New Form.dll
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.exe
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.deps.json
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.runtimeconfig.json
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.dll
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\New Form.pdb
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.AssemblyReference.cache
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form1.resources
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form2.resources
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Properties.Resources.resources
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.UpdateItemForm.resources
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.GenerateResource.cache
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfoInputs.cache
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.AssemblyInfo.cs
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CoreCompileInputs.cache
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.csproj.CopyComplete
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.dll
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\refint\New Form.dll
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.pdb
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New Form.genruntimeconfig.cache
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\ref\New Form.dll
+C:\Users\usama.sheikh\Documents\TradingApp1-6922\TradingApp1-20220608T192642Z-001\TradingApp1\New Form\obj\Debug\net6.0-windows\New_Form.Form3.resources

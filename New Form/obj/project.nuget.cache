@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+JvcvvcpQtRwnMf21nWu/lQYjn37xa7hilJuBNgCVrvWjrd2RKrF84mv6qds1PInjOTK6ui1X1jXoSd4a8YN5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\usama.sheikh\\Documents\\TradingApp1-6922\\TradingApp\\TradingApp1\\New Form\\New Form.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usama.sheikh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
