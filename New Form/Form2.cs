@@ -21,36 +21,8 @@ namespace New_Form
             InitializeComponent();
         }
 
-        public class JSONCLASS
-        {
-            public string? Id { get; set; }
-            public string? Name { get; set; }
-
-            //public string? Symbol { get; set; }
-
-            public string? quantity
-            {
-                get; set;
-            }
-
-            public string? OrderTypes { get; set; }
-            public string? AccountTypes { get; set; }
-
-           
-
-            public string? Routes { get; set; }
-
-            public string? Tif { get; set; }
-
-            public string? Price { get; set; }
-            public string? Dd { get; set; }
-
-
-           // public DateTimeOffset Date { get; set; }
-
-
-
-        }
+        User userClass = new User();
+        GridClass gridClass = new GridClass();
 
         //public void createButton() {
         //    DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
@@ -62,49 +34,12 @@ namespace New_Form
 
 
         //}
-        public void MyMethod()
-        {
-            string[] lines = File.ReadAllLines(@"D:\usama.txt");
-            //string[] values;
-
-            for (int i = 0; i < lines.Length; i++)
-            {
-                User values = JsonConvert.DeserializeObject<User>(lines[i]);
-                //values = JsonConvert.DeserializeObject<User>(lines[i]);
-                //string[] row = new string[values.Length];
-
-                table.Rows.Add(values.id, values.name, values.quantity ,values.dd, values.price, values.OrderTypes, values.AccountTypes,  values.tif, values.routes );
-                //yahan file se utha rhay hen wo grid may show karwa rhay
-                //List<User> valuesList = new List<User>();
-                
-
-
-
-                //.Rows.RemoveAt(i);
-                //Button btn;
-                //for (int n_i = 0; n_i < 10; n_i++) { 
-                //btn = (Button)Controls.Find("button" + n_i, true)[];
-                //btn.Text = "";
-                //}
-
-
-            }
-            //if (dataGridView1.Columns[e.ColumnIndex].Name == "Delete")
-            //    {
-
-            //        if (MessageBox.Show("are you sure you wsan to delete", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            //        {
-            //            //table.Columns.Remove(); 
-
-            //        }
-
-            //    }
-        }
+        
 
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
 
 
 
@@ -128,97 +63,21 @@ namespace New_Form
 
                 }*/
         }
-        DataTable table = new DataTable();
         private void Form2_Load(object sender, EventArgs e)
         {
             // add columns to datatable
-            table.Columns.Add("Id", typeof(string));
-            table.Columns.Add("Name", typeof(string));
-            //table.Columns.Add("Symbol", typeof(string));
-            table.Columns.Add("Quantity", typeof(string));
-            
-            table.Columns.Add("Date", typeof(string));
-            table.Columns.Add("Price", typeof(string));
-            table.Columns.Add("OrderTypes", typeof(string));
-            table.Columns.Add("AccountTypes", typeof(string));
-            table.Columns.Add("TIF", typeof(string));
-            table.Columns.Add("Routes", typeof(string));
 
-            dataGridView1.DataSource = table;
+            dataGridView1.DataSource = userClass.getAllUser();
             // for showing delete button
             //createButton();
             // to show the data in grid view from
-            MyMethod();
 
-
-            if(rowName != "" && rowDate != "" && rowQuantity !="" && rowPrice!="" && rowOrderTypes != "" && rowAccountTypes != "" && rowTif != "" && rowRoutes != "")
+            if(rowName != "" && /*rowDate != "" &&*/ rowQuantity !="" && rowPrice!="" && rowOrderTypes != "" && rowAccountTypes != "" && rowTif != "" && rowRoutes != "")
             {
-                dataGridView1.Rows[rowindex].Cells["Name"].Value = rowName;
-              //  dataGridView1.Rows[rowindex].Cells["Symbol"].Value = rowAddress;
-                dataGridView1.Rows[rowindex].Cells["Quantity"].Value = rowQuantity;
-                dataGridView1.Rows[rowindex].Cells["Date"].Value = rowDate;
-                dataGridView1.Rows[rowindex].Cells["Price"].Value = rowPrice;
-                dataGridView1.Rows[rowindex].Cells["OrderTypes"].Value = rowOrderTypes;
-                dataGridView1.Rows[rowindex].Cells["AccountTypes"].Value = rowAccountTypes;
-                dataGridView1.Rows[rowindex].Cells["TIF"].Value = rowTif;
-                dataGridView1.Rows[rowindex].Cells["Routes"].Value = rowRoutes;
+                dataGridView1 = gridClass.updateRow(rowindex, dataGridView1, rowName, rowQuantity, rowDate, rowPrice, rowOrderTypes, rowAccountTypes, rowTif, rowRoutes);
 
-
-                string path = @"D:\usama.txt";
-                File.WriteAllText(path, String.Empty);
-
-                int counter = 0;
-                List<String> valuesList = new List<String>();
-                foreach (DataGridViewRow item in dataGridView1.Rows)
-                {
-                    counter++;
-                    
-
-                    String id = item.Cells["Id"].Value.ToString();
-                    String name = item.Cells["Name"].Value.ToString();
-                  //  String Symbol = item.Cells["Symbol"].Value.ToString();
-                    String  quanity = item.Cells["Quantity"].Value.ToString();
-                    String date = item.Cells["Date"].Value.ToString();
-                    String price = item.Cells["Price"].Value.ToString();
-                    String ordertypes = item.Cells["OrderTypes"].Value.ToString();
-                    String accounttypes = item.Cells["AccountTypes"].Value.ToString();
-                    String tif = item.Cells["TIF"].Value.ToString();
-                    String routes = item.Cells["Routes"].Value.ToString();
-                    var jsonCLASS = new JSONCLASS
-                    {
-                        Id = id,
-                        Name = name,
-                       // Symbol = Symbol,
-                        quantity = quanity,
-                        Price = price,
-                        OrderTypes = ordertypes,
-                        AccountTypes = accounttypes,
-                        Tif= tif,
-                        Routes= routes,
-                        Dd = date,
-                    };
-
-                    // Convert String to Json
-
-                    string jsonString = System.Text.Json.JsonSerializer.Serialize(jsonCLASS);
-                    //yahan se jraha hay filr mau
-                    /*Console.WriteLine(jsonString);*/
-
-
-
-                    using (StreamWriter sw = File.AppendText(path))
-                    {
-
-                        sw.WriteLine(jsonString);
-
-                    }
-                    if (counter == (dataGridView1.Rows.Count - 1))
-                    {
-                        break;
-                    }
-                }
-
-
+                /*dataGridView1 = gridClass.saveGridInfo(dataGridView1);
+*/
                 //MessageBox.Show(valuesList.ToString());
             }
 
@@ -287,12 +146,14 @@ namespace New_Form
             }
             dataGridView1.Rows.RemoveAt(selectedrowindex);
 
-            string path = @"D:\usama.txt";
+            gridClass.saveGridInfo(dataGridView1);
+
+          /*  string path = @"E:\usama.txt";
             File.WriteAllText(path, String.Empty);
 
             int counter = 0;
-            List<String> valuesList = new List<String>();
-            foreach (DataGridViewRow item in dataGridView1.Rows)
+            List<String> valuesList = new List<String>();*/
+/*            foreach (DataGridViewRow item in dataGridView1.Rows)
             {
                 counter++;
 
@@ -325,7 +186,7 @@ namespace New_Form
 
                 string jsonString = System.Text.Json.JsonSerializer.Serialize(jsonCLASS);
                 //yahan se jraha hay filr mau
-                /*Console.WriteLine(jsonString);*/
+                *//*Console.WriteLine(jsonString);*//*
 
 
 
@@ -340,28 +201,12 @@ namespace New_Form
                     break;
                 }
             }
-        }
+*/        }
     } }
 
         
     
 
-    public class User
-    {
-        public string id { get; set; }
-        public string name { get; set; }
-        public DateTimeOffset date { get; set; }
-        //public string Symbol { get; set; }
-        public string quantity { get; set; }
-
-    public string price { get; set; }
-    public string OrderTypes { get; set; }
-    public string AccountTypes { get; set; }
-    public string routes { get; set; }
-    public string tif { get; set; }
-    public string dd { get; set; }
-
-
-}
+ 
 
 

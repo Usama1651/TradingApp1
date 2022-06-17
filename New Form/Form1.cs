@@ -14,12 +14,14 @@ using System.IO;
 
 
 
-
-
 namespace New_Form
 {
+
+    
     public partial class Form1 : System.Windows.Forms.Form
     {
+        
+
         public Form1()
         {
             
@@ -31,61 +33,6 @@ namespace New_Form
             stp.Enabled = false;
         }
 
-        public void autogen() {
-            string num = "123456789";
-            int len = num.Length;
-            string otp = string.Empty;
-            int otpdigit = 5;
-            string finaldigit;
-
-            int getindex;
-            for (int i =0; i < otpdigit; i++)
-            {
-                do
-                {
-                    getindex = new Random().Next(0, len);
-                    finaldigit = num.ToCharArray()[getindex].ToString();
-
-                } while (otp.IndexOf(finaldigit) != -1);
-                otp = finaldigit;
-            
-            }
-            textBox4.Text=(otp);
-        
-       }
-        public class JSONCLASS
-        {
-
-            public string? Id { get; set; }
-            public string? Name { get; set; }
-
-            //public string? Symbol { get; set; }
-
-            public string? quantity
-            {
-                get; set;
-            }
-
-            public string? OrderTypes { get; set; }
-            public string? AccountTypes { get; set; }
-
-            
-
-            public string? Routes { get; set; }
-
-            public string? Tif { get; set; }
-
-            public string? Price { get; set; }
-
-
-           // public DateTimeOffset Date { get; set; }
-            public string? dd { get; set; }
-
-            public string? Stplmt { get; set; }
-
-
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -97,71 +44,80 @@ namespace New_Form
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (textBox3.Text == String.Empty)
+        GridClass gridClass = new GridClass();
+
+        private void button1_Click(object sender,  EventArgs e )
+        {/*
+            gridClass.getValluesFromForm1(textBox2.Text, textBox3.Text, Text)*/
+            if (string.IsNullOrEmpty(textBox3.Text.Trim()))
             {
-                MessageBox.Show("Please Enter Symbol");
+                errorProvider1.SetError(textBox3, "symbol is required");
+                return;
             }
-             else if (textBox2.Text == String.Empty) {
-                MessageBox.Show("Please Enter Price");
+            else if (string.IsNullOrEmpty(textBox2.Text.Trim())) {
 
+                errorProvider2.SetError(textBox2, "price is required");
+                return;
             }
 
-            else if (textBox5.Text == String.Empty)
+            else if (string.IsNullOrEmpty(textBox5.Text.Trim()))
             {
-                MessageBox.Show("Please Enter Quantity");
 
+                errorProvider2.SetError(textBox5, "quantity is required");
+                return;
             }
 
-            else if (comboOrderTypes.Text == String.Empty)
+            else if (string.IsNullOrEmpty(comboOrderTypes.Text.Trim()))
             {
-                MessageBox.Show("Please Enter Order Type");
 
+                errorProvider2.SetError(comboOrderTypes, "order type is required");
+                return;
             }
 
-            else if (comboRoutes.Text == String.Empty)
+            else if (string.IsNullOrEmpty(comboRoutes.Text.Trim()))
             {
-                MessageBox.Show("Please Enter Route");
 
+                errorProvider2.SetError(comboRoutes, "routes is required");
+                return;
             }
 
-            else if (comboTIF.Text == String.Empty)
+            else if (string.IsNullOrEmpty(comboTIF.Text.Trim()))
             {
-                MessageBox.Show("Please Enter Tif");
 
+                errorProvider2.SetError(comboTIF, "routes is required");
+                return;
             }
 
-            else if (combaccount.Text == String.Empty)
+            else if (string.IsNullOrEmpty(combaccount.Text.Trim()))
             {
-                MessageBox.Show("Please Enter Account");
 
+                errorProvider2.SetError(combaccount, "routes is required");
+                return;
             }
-
-
-
             else
             {
-                MessageBox.Show("Data Submit Successfull");
+
+                // ID GENERTOR  CLASS      
+                idGenerator ids = new idGenerator();
+
+                this.textBox4.Text = ids.idf();
+
+                datetext.Text = dateTimePicker1.Value.ToString();
 
 
                 //Json Object
-
-                autogen();
-                datetext.Text = dateTimePicker1.Value.ToString();
-
-                var jsonCLASS = new JSONCLASS
+                var setData = new setData
                 {
-                    Id = textBox4.Text,
-                    Name = textBox3.Text,
+                    id = textBox4.Text,
+                    name = textBox3.Text,
                     //Symbol = textBox2.Text,
                     quantity = textBox5.Text,
-                    OrderTypes = comboOrderTypes.Text,
-                    AccountTypes = combaccount.Text,
-                    Stplmt=stp.Text,
-                    Routes = comboRoutes.Text,
-                    Tif = comboTIF.Text,
-                    Price = textBox2.Text,
+                    ordertypes = comboOrderTypes.Text,
+                    accounttypes = combaccount.Text,
+                    stplmt = stp.Text,
+                    routes = comboRoutes.Text,
+                    tif = comboTIF.Text,
+                    price = textBox2.Text,
                     dd = datetext.Text,
                     // Date = DateTime.Parse(textBox1.Text),
 
@@ -170,26 +126,9 @@ namespace New_Form
 
                 };
 
-                // Convert String to Json
-
-                string jsonString = JsonSerializer.Serialize(jsonCLASS);
-                //yahan se jraha hay filr mau
-                /*Console.WriteLine(jsonString);*/
-
-                string path = @"D:\usama.txt";
-
-
-                using (StreamWriter sw = File.AppendText(path))
-                {
-
-                    sw.WriteLine(jsonString);
-
-
-                }
+                sendData sendData = new sendData();
+                sendData.serialize(setData);
             }
-
-            
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -198,8 +137,6 @@ namespace New_Form
             Form2 form2 = new Form2();
             form2.Show();
 
-            // Form2 data = new Form2();
-            
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -227,7 +164,6 @@ namespace New_Form
                 
             }
 
-            
         }
 
         private void Form1_ResizeEnd(object sender, EventArgs e)
@@ -277,7 +213,7 @@ namespace New_Form
 
         private void comboOrderTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //string l1 = "MKT";
+
             if (comboOrderTypes.Text == "MKT")
             {
 
@@ -305,14 +241,7 @@ namespace New_Form
                
             }
 
-            //if (comboOrderTypes.Text == "STOPLMT")
-            //{
-            //    stp.Enabled = true;
-
-            //}
-            //else {
-            //    stp.Enabled = false;
-            //}
+            
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

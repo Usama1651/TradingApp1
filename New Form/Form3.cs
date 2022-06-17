@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace New_Form
 {
-    public partial class Form3 : System.Windows.Forms.Form
+    public partial class Form3 : Form
     {
         public Form3()
         {
             InitializeComponent();
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -32,48 +27,47 @@ namespace New_Form
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
-            Form1 fr=new Form1();
-            if (username.Text == "usama" && Password.Text == "12345")
+            if (textBox1.Text == "usama" && textBox2.Text == "12345")
             {
-                fr.Show();
+                Form1 frm = new Form1();    
+                frm.Show();
                 // new Form1.Show();
                 this.Hide();
             }
             else
             {
                 MessageBox.Show("The username or password is incorrect");
-                username.Clear();
-                Password.Clear();
-                username.Focus();
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox1.Focus();
 
 
             }
         }
 
-        private void Password_TextChanged(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e)
         {
-            username.Clear();
-            Password.Clear();
-            username.Focus();
+            Application.Exit();
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox1.Focus();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

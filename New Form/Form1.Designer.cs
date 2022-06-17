@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.datetext = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -53,6 +54,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.stp = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
             this.SuspendLayout();
             // 
             // datetext
@@ -309,6 +318,22 @@
             this.stp.TabIndex = 25;
             this.stp.TextChanged += new System.EventHandler(this.stp_TextChanged);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
+            // errorProvider4
+            // 
+            this.errorProvider4.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -344,17 +369,16 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private TextBox datetext;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -362,19 +386,27 @@
         private Button button1;
         private Button button2;
         private Label label6;
-        private TextBox textBox5;
         private Label label5;
-        private ComboBox combaccount;
         private Label label7;
         private Label label8;
-        private ComboBox comboTIF;
         private Label label9;
-        private ComboBox comboOrderTypes;
         private Label label10;
-        private ComboBox comboRoutes;
-        private DateTimePicker dateTimePicker1;
         private Button button3;
         private Label label11;
-        private TextBox stp;
+        public TextBox textBox3;
+        public TextBox textBox4;
+        public TextBox datetext;
+        public TextBox textBox2;
+        public TextBox textBox5;
+        public ComboBox combaccount;
+        public ComboBox comboTIF;
+        public ComboBox comboOrderTypes;
+        public ComboBox comboRoutes;
+        public DateTimePicker dateTimePicker1;
+        public TextBox stp;
+        private ErrorProvider errorProvider1;
+        private ErrorProvider errorProvider2;
+        private ErrorProvider errorProvider3;
+        private ErrorProvider errorProvider4;
     }
 }

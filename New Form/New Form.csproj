@@ -11,6 +11,11 @@
 
   <ItemGroup>
     <Compile Remove="Login.cs" />
+    <Compile Remove="update.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="update.cs" />
   </ItemGroup>
 
   <ItemGroup>
